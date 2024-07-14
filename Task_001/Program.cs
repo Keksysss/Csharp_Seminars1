@@ -8,11 +8,18 @@ int firstNumber = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите второе целое число: ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-if (firstNumber > secondNumber)
+if (firstNumber == secondNumber)
 {
-    System.Console.WriteLine($"a = {firstNumber} большее, b = {secondNumber} меньшее");
+    Console.WriteLine("Числа равны");
 }
 else
 {
-    System.Console.WriteLine($"b = {secondNumber} большее, a = {firstNumber} меньшее");
+    if (firstNumber > secondNumber)
+    {
+        System.Console.WriteLine("Первое число больше");
+    }
+    else
+    {
+        System.Console.WriteLine("Второе число больше");
+    }
 }
